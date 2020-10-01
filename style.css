@@ -265,3 +265,25 @@ img{width:100%}
     margin-top:0.5rem;
 }
 
+/* About Page (css can be included in utility class as it can use again if another page is added) */
+.page-container{
+    display: grid;
+    grid-template-columns:4.5fr 1.8fr;
+    grid-gap:1.5rem;
+}
+
+.page-container > *:first-child{
+    grid-row: 1 / span 3;
+}
+
+.page-container article h1{
+    font-size:2.5rem;
+}
+
+.page-container aside a{
+    display: inline-block;
+    background: #484650;
+    text-align: center;
+    padding:0.7rem;
+    width:100%;
+}
