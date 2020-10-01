@@ -19,6 +19,10 @@ a{
     color:#000;
 }
 
+p{
+    margin-bottom: 1.7rem;
+}
+
 img{width:100%}
 
 /* Utility Class */
@@ -49,7 +53,7 @@ img{width:100%}
 }
 
 .btn{    
-    padding:0.3rem 0.6rem;
+    padding:0.5rem 0.8rem;
     border:none;
 }
 
@@ -60,6 +64,16 @@ img{width:100%}
 .btn-light{
     background:#919493;
     color:#000;
+}
+
+.btn-primary{
+    background: #CA3535;
+    color:#fff;
+}
+
+.btn-secondary{
+    color:#fff;
+    background:#F6A665;
 }
 
 .parts{
@@ -86,6 +100,21 @@ img{width:100%}
 .py-2{padding: 1.5rem 0}
 .py-3{padding: 1rem 0}
 
+.lists li{
+    border-bottom:1px dotted #A1A3A0;
+    list-style: none;
+    padding:0.5rem;
+    margin-bottom: 0.5rem;
+    width:90%;
+}
+
+.lists li a{
+    color:#fff;
+}
+
+.lists li a:hover{
+    color:#CA3535;
+}
 
 /* Navbar */
 #navbar{
@@ -156,13 +185,21 @@ img{width:100%}
 
 #showcase .showcase-container{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1.5fr 1fr;
     align-content: center;
     height:60vh;
 }
 
 #showcase .showcase-content{
     z-index:1;
+}
+
+#showcase .showcase-content h1{
+    font-size: 3.3rem;
+}
+
+#showcase .showcase-content p{
+    font-size: 1.3rem;
 }
 
 /* Articles */
@@ -189,6 +226,42 @@ img{width:100%}
     grid-column:2 /span 2;
 }
 
+/* Footer */
+#foot{
+    background: #333333;
+    color:#fff;
+}
 
+#foot .foot-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:1.5rem;
+}
 
+#foot img{
+    width:160px;
+    margin-bottom:1rem;
+}
+
+#foot form input[type='email']{
+    padding:0.5rem;
+    width:90%;
+    margin-bottom: 0.5rem;
+}
+
+#foot form input[type='submit']{
+    padding:0.45rem;
+    width:90%;
+    cursor: pointer;
+}
+
+#foot .span-div{
+    background:#484650;
+    grid-column:1 /span 4;
+    padding-top:1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius:5px;
+    margin-top:0.5rem;
+}
 
