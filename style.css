@@ -23,8 +23,6 @@ p{
     margin-bottom: 1.7rem;
 }
 
-img{width:100%}
-
 /* Utility Class */
 .container{
     max-width:1100px;
@@ -226,6 +224,10 @@ img{width:100%}
     grid-column:2 /span 2;
 }
 
+article img{
+    width:100%;
+}
+
 /* Footer */
 #foot{
     background: #333333;
@@ -268,22 +270,44 @@ img{width:100%}
 /* About Page (css can be included in utility class as it can use again if another page is added) */
 .page-container{
     display: grid;
-    grid-template-columns:4.5fr 1.8fr;
-    grid-gap:1.5rem;
+    grid-template-columns:5fr 2fr;
+    grid-gap: 1.5rem;
 }
 
 .page-container > *:first-child{
-    grid-row: 1 / span 3;
-}
+   grid-row: 1 / span 3;
+} 
 
 .page-container article h1{
     font-size:2.5rem;
 }
 
-.page-container aside a{
+.page-container aside .btn{
     display: inline-block;
-    background: #484650;
+    background: #333;
     text-align: center;
     padding:0.7rem;
     width:100%;
+}
+
+/* Article */
+#articles img{
+    margin-bottom: 1rem;
+}
+
+.meta{
+    background-color: #D5D5D3;
+    padding:0rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0.8rem;
+}
+
+#articles .category{
+    margin-top: 0.7rem;
+}
+
+#articles .btn{
+    background: #CA3535;
 }
