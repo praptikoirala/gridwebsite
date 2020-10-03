@@ -315,6 +315,10 @@ article img{
     margin-bottom:0.8rem;
 }
 
+#articles aside div{
+    margin-bottom: 1.5rem;
+}
+
 #articles .category{
     margin-top: 0.7rem;
 }
